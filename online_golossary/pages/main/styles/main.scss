@@ -1,0 +1,234 @@
+$base-color: #623ab9;
+$base-color-hover: #623ab9dd;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $base-color;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: .3s;
+}
+
+body {
+    background-color: #f3effd;
+}
+
+// Header
+
+.header-cont {
+    background-color: #faf7fe;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 24px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: $base-color;
+    &:hover {
+        color: $base-color-hover;
+    }
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: $base-color;
+    text-decoration: none;
+    &:hover {
+        color: $base-color-hover;
+    }
+}
+
+.nav-link:hover {
+    color: $base-color-hover;
+}
+
+.info-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    & img {
+        width: 24px;
+    }
+}
+
+// Main
+
+.main {
+    margin: 60px auto 0;
+    padding: 24px;
+    max-width: 1200px;
+    display: flex;
+}
+
+.left-pannel {
+    max-width: 450px;
+    margin: 30px;
+    padding: 0 30px;
+}
+
+.right-pannel {
+    display: flex;
+    align-items: center;
+    & img {
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+
+.hero-title {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: $base-color;
+}
+
+.hero-subtitle {
+    font-style: italic;
+    font-size: 15px;
+    color: #7655bc;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    font-weight: 500;
+    transform: rotate(-4deg);
+}
+
+.hero-description {
+    font-size: 14px;
+    line-height: 1.4;
+    color: $base-color;
+    margin-bottom: 32px;
+    font-weight: 500;
+}
+
+.create-btn {
+    background-color: $base-color;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #7c5dfa4d;
+    & span {
+        color: #ffffff;
+    }
+    &:hover {
+        background-color: $base-color-hover;
+        box-shadow: 0 6px 16px #7c5dfa76;
+    }
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 450px;
+}
+
+.feature-item {
+    border-radius: 15px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-right: 1px solid $base-color;
+    border-left: 1px solid $base-color;
+    margin: 10px 0;
+    width: 30%;
+    &:hover {
+        & div {
+            color: $base-color-hover;
+        }
+        box-shadow: 0 6px 16px #7c5dfa76;
+        cursor: pointer;
+    }
+}
+
+.feature-icon {
+    & img {
+        width: 28px;
+        height: 24px;
+    }
+    padding-bottom: 10px;
+}
+
+.feature-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $base-color;
+}
+
+.footer-cont {
+    background-color: #faf7fe;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 0 auto;
+    & * {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .header {
+padding: 15px 20px;
+    }
+}
+    
