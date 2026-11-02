@@ -1,20 +1,6 @@
 $base-color: #623ab9;
 $base-color-hover: #623ab9dd;
 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: $base-color;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    transition: .3s;
-}
-
-body {
-    background-color: #f3effd;
-}
-
 // Header
 
 .header-cont {
@@ -176,6 +162,7 @@ body {
     border-right: 1px solid $base-color;
     border-left: 1px solid $base-color;
     margin: 10px 0;
+    height: 100px;
     width: 30%;
     &:hover {
         & div {

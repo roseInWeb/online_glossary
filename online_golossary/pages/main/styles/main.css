@@ -1,16 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #623ab9;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  transition: 0.3s;
-}
-
-body {
-  background-color: #f3effd;
-}
-
 .header-cont {
   background-color: #faf7fe;
   position: fixed;
@@ -168,6 +155,7 @@ body {
   border-right: 1px solid #623ab9;
   border-left: 1px solid #623ab9;
   margin: 10px 0;
+  height: 100px;
   width: 30%;
 }
 .feature-item:hover div {
