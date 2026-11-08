@@ -1,0 +1,137 @@
+$base-color: #623ab9;
+$base-color-hover: #623ab9dd;
+
+// Header
+
+.header-cont {
+    background-color: #faf7fe;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 24px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: $base-color;
+    &:hover {
+        color: $base-color-hover;
+    }
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: $base-color;
+    text-decoration: none;
+    &:hover {
+        color: $base-color-hover;
+    }
+}
+
+.nav-link:hover {
+    color: $base-color-hover;
+}
+
+.info-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    & img {
+        width: 24px;
+    }
+}
+
+.main {
+    max-width: 1200px;
+    margin: 90px auto 80px;
+}
+
+.card {
+    background-color: #faf7fe;
+    border-radius: 12px;
+    padding: 12px 40px;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 12px 18px rgba(108, 92, 231, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.intro {
+    font-size: 0.9rem;
+    color: #747d8c;
+}
+
+
+.footer-cont {
+    background-color: #faf7fe;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto auto;
+    & * {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+    
